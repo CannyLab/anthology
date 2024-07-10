@@ -1,4 +1,4 @@
-# Virtual Personas for Language Models via an Anthology of Backstories [[Paper](https://arxiv.org/abs/2312.04511)]
+# Virtual Personas for Language Models via an Anthology of Backstories [[Paper](https://www.arxiv.org/abs/2407.06576)]
 
 ## Code will be coming soon!
 
