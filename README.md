@@ -17,7 +17,12 @@
 
 
 What does it mean for large language models (LLMs) to be trained on massive text corpora, collectively produced by millions and billions of distinctive human authors?
-We introduce ***Anthology***, a method for conditioning LLMs to representative, consistent, and diverse virtual personas by generating and utilizing naturalistic backstories with rich details of individual values and experience.
+LLMs are capable of generating conditional text that represents the characteristics of an agent likely to have produced that context. 
+This suggests that, with appropriate conditioning, LLMs could be guided to approximate the responses of a particular human voice, rather than the *mixture of voices* that otherwise emerges.
+
+This raises an interesting question: __How can we condition the model to reflect a distinct, individual voice with precision, amidst the vast diversity of perspectives within the text corpora?__
+
+To answer this question, we introduce ***Anthology***, a method for conditioning LLMs to representative, consistent, and diverse virtual personas by generating and utilizing naturalistic backstories with rich details of individual values and experience.
 Additionally, we present methods for generating these backstories directly from LLMs, enabling efficient production of extensive sets that span a broad spectrum of human demographics. By grounding language models in detailed backstories, Anthology enhances their ability to simulate individual human profiles with greater accuracy, as measured by alignment with the distribution and consistency of authentic human responses.
 
 ## Installation
