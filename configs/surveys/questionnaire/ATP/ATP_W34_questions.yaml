@@ -1,0 +1,95 @@
+wave: 34
+questions:
+  FUD37A_W34:
+    question_body: "How likely is it that genetically modified foods will lead to more affordably-priced food"
+    choices:
+      - Very likely
+      - Fairly likely
+      - Not too likely
+      - Not at all likely
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  FUD37B_W34:
+    question_body: "How likely is it that genetically modified foods will lead to health problems for the population as a whole"
+    choices:
+      - Very likely
+      - Fairly likely
+      - Not too likely
+      - Not at all likely
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  FUD37C_W34: 
+    question_body: "How likely is it that genetically modified foods will create problems for the environment"
+    choices:
+      - Very likely
+      - Fairly likely
+      - Not too likely
+      - Not at all likely
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  FUD35_W34:
+    question_body: "How much do you, personally, care about the issue of genetically modified foods?"
+    choices:
+      - A great deal
+      - Some
+      - Not too much
+      - Not at all
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  FUD22_W34:
+    question_body: "How much of the food you eat is organic?"
+    choices:
+      - Most of it
+      - Some of it
+      - Not too much
+      - None at all
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  EAT5B_W34:
+    question_body: "How much health risk, if any, does eating meat from animals that have been given antibiotics or hormones have for the average person over the course of their lifetime?"
+    choices:
+      - A great deal of health risk
+      - Some health risk
+      - Not too much health risk
+      - No health risk at all
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  EAT5C_W34:
+    question_body: "How much health risk, if any, does eating food and drinks with artificial coloring have for the average person over the course of their lifetime?"
+    choices:
+      - A great deal of health risk
+      - Some health risk
+      - Not too much health risk
+      - No health risk at all
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  EAT5D_W34:
+    question_body: "How much health risk, if any, does eating food and drinks with artificial preservatives have for the average person over the course of their lifetime?"
+    choices:
+      - A great deal of health risk
+      - Some health risk
+      - Not too much health risk
+      - No health risk at all
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+randomize_option_order: true # randomize the order of options
+randomize_question_order: true # randomize the order of questions
+consistency_prompt: Please answer the following question keeping in mind your previous answers.
+in_series: true # whether the questions should be asked in series or one-by-one
+include_answer_forcing: true # include answer forcing prompt after displaying available choices

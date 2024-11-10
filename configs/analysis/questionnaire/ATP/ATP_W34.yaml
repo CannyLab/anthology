@@ -1,0 +1,60 @@
+wave: 34
+human_data_path:
+demographics_metadata_path:
+questions:
+  FUD37A_W34:
+    question_body: "How likely is it that genetically modified foods will lead to more affordably-priced food"
+    choices:
+      - Very likely
+      - Fairly likely
+      - Not too likely
+      - Not at all likely
+  FUD37B_W34:
+    question_body: "How likely is it that genetically modified foods will lead to health problems for the population as a whole"
+    choices:
+      - Very likely
+      - Fairly likely
+      - Not too likely
+      - Not at all likely
+  FUD37C_W34: 
+    question_body: "How likely is it that genetically modified foods will create problems for the environment"
+    choices:
+      - Very likely
+      - Fairly likely
+      - Not too likely
+      - Not at all likely
+  FUD35_W34:
+    question_body: "How much do you, personally, care about the issue of genetically modified foods?"
+    choices:
+      - A great deal
+      - Some
+      - Not too much
+      - Not at all
+  FUD22_W34:
+    question_body: "How much of the food you eat is organic?"
+    choices:
+      - Most of it
+      - Some of it
+      - Not too much
+      - None at all
+  EAT5B_W34:
+    question_body: "How much health risk, if any, does eating meat from animals that have been given antibiotics or hormones have for the average person over the course of their lifetime?"
+    choices:
+      - A great deal of health risk
+      - Some health risk
+      - Not too much health risk
+      - No health risk at all
+  EAT5C_W34:
+    question_body: "How much health risk, if any, does eating food and drinks with artificial coloring have for the average person over the course of their lifetime?"
+    choices:
+      - A great deal of health risk
+      - Some health risk
+      - Not too much health risk
+      - No health risk at all
+  EAT5D_W34:
+    question_body: "How much health risk, if any, does eating food and drinks with artificial preservatives have for the average person over the course of their lifetime?"
+    choices:
+      - A great deal of health risk
+      - Some health risk
+      - Not too much health risk
+      - No health risk at all

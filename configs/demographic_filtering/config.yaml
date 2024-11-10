@@ -1,0 +1,35 @@
+defaults:
+  - backstories: self_generated
+  - human_survey_data: anes
+  - _self_
+
+# Set the output directory
+hydra:
+  run:
+    dir: outputs/demo_filtering/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+run_dir: ${hydra:runtime.output_dir}
+save_dir: /rscratch/data/anthology/outputs/demo_filtering
+
+# output data name
+output_data_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+# Debugging mode
+debug: false
+
+# random seed
+random_seed: 42
+
+# Hyperparameters
+optimization_parameters:
+  k_list: [500,1000,1500,2000,2500,3000,3500,4000]
+  beta_config: # log-uniform distribution
+    start: -5
+    stop: 0
+    num: 5
+    base: 2
+  loss_type: "l2"
+  lr: 0.01
+  max_iter: 10000
+  verbose: true
+  order: 2

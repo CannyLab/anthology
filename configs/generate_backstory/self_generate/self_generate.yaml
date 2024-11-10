@@ -1,0 +1,10 @@
+# Formatting question and answer
+surveyor: "Question"
+respondent: "Answer"
+connector: ":"
+
+# preamble
+preamble_question: "Are you a US citizen?"
+
+# Backstory questions
+backstory_question: "Tell me about yourself. How old are you? Where did you grow up? What events made you who you are? What matters to you and what do you enjoy?"

@@ -1,0 +1,4 @@
+backstory_path: # Path to the backstory file
+backstory_type: self_generated
+num_backstories: -1
+shuffle: False

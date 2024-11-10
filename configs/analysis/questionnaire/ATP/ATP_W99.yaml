@@ -1,0 +1,52 @@
+wave: 99
+human_data_path: # Download ATP W99 from Pew Research Center. The data file format should be sav.
+demographics_metadata_path: "data/questions/ATP_W99_demographic_questions.json"
+questions:
+  POSNEGAI_a_W99:
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could know people's thoughts and behaviors?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+  POSNEGAI_b_W99:
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could perform household chores?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+  POSNEGAI_c_W99: 
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could make important life decisions for people?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+  POSNEGAI_d_W99: 
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could diagnose medical problems?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+  POSNEGAI_e_W99:
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could perform repetitive workplace tasks?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+  POSNEGAI_f_W99: 
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could handle customer service calls?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned

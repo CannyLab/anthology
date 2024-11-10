@@ -1,0 +1,49 @@
+party_identification:
+  type: "multiple_choice"
+  question: "Generally speaking, do you usually think of yourself as {RANDOM_DEMO_REPUBLICAN} an Independent or what?"
+  choices:
+    - Democrat
+    - Republican
+    - Independent
+    - Other
+    - No preference
+  randomize_choices: true
+  consistency_prompt: Please answer the following question keeping in mind your previous answers.
+
+political_ideology:
+  type: "multiple_choice"
+  question: "Where would you place yourself on the political spectrum from {RANDOM_SPECTRUM}?"
+  choices:
+    - Very liberal
+    - Liberal
+    - Moderate
+    - Conservative
+    - Very conservative
+    - No preference
+  randomize_choices: true
+  consistency_prompt: Please answer the following question keeping in mind your previous answers.
+
+republican_strength:
+  type: "multiple_choice"
+  question: "Would you call yourself a strong Republican, or a not very strong Republican?"
+  choices:
+    - Strong Republican
+    - Not very strong Republican
+  consistency_prompt: Please answer the following question keeping in mind your previous answers.
+  
+democratic_strength:
+  type: "multiple_choice"
+  question: "Would you call yourself a strong Democrat, or a not very strong Democrat?"
+  choices:
+    - Strong Democrat
+    - Not very strong Democrat
+  consistency_prompt: Please answer the following question keeping in mind your previous answers.
+
+independent_leaning:
+  type: "multiple_choice"
+  question: "Do you think of yourself as closer to the Republican or to the Democratic party?"
+  choices:
+    - Closer to Republican
+    - Neither
+    - Closer to Democrat
+  consistency_prompt: Please answer the following question keeping in mind your previous answers.

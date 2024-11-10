@@ -1,0 +1,47 @@
+wave: 112 # topic: social media update
+human_data_path: # Download ATP W111 from Pew Research Center. The data file format should be sav.
+demographics_metadata_path: "data/questions/ATP_W111_demographic_questions.json"
+questions:
+  ONCOMMIT_W111:
+    question_body: "Do you think online dating sites and dating apps have made finding a long-term partner or spouse..."
+    choices:
+      - A lot harder
+      - A little harder
+      - Made no difference
+      - A little easier
+      - A lot easier
+  ONSAFE_W111:
+    question_body: "In general, how safe do you think online dating sites and dating apps are as a way to meet people?"
+    choices:
+      - Very safe
+      - Somewhat safe
+      - Not too safe
+      - Not at all safe
+  HARASSWRK2_W111: 
+    question_body: "How common do you think it is for people to report that they experienced sexual harassment or assault in the workplace when it DID NOT happen?"
+    choices:
+      - Extremely common
+      - Very common
+      - Somewhat common
+      - Not too common
+      - Not at all common
+  HARASSWRK3_W111: 
+    question_body: "How common do you think it is for people to experience sexual harassment or assault in the workplace and NOT report it?"
+    choices:
+      - Extremely common
+      - Very common
+      - Somewhat common
+      - Not too common
+      - Not at all common
+  GAMB2_W111:
+    question_body: "Thinking about the fact that betting on sports is now legal in much of the country, do you think this is generally..."
+    choices:
+      - A good thing for society
+      - A bad thing for society
+      - Neither a good nor bad thing for society
+  GAMB3_W111: 
+    question_body: "Thinking about the fact that betting on sports is now legal in much of the country, do you think this is generally..."
+    choices:
+      - A good thing for sports
+      - A bad thing for sports
+      - Neither a good nor bad thing for sports

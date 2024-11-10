@@ -1,0 +1,228 @@
+survey_name: anes
+
+trait_of_interest:
+  - age_category_6
+  - gender
+  - education_level
+  - income_level_category_13
+  - race
+# this subgroup contains human information with the race != White.
+target_distribution:
+  age:
+    source: age_category_6
+    map_source:
+      18-24: 0
+      25-34: 1
+      35-44: 2
+      45-54: 3
+      55-64: 4
+      65 or Above: 5
+    map_survey:
+      18-20: 0
+      21-24: 0
+      25-29: 1
+      30-34: 1
+      35-39: 2
+      40-44: 2
+      45-49: 3
+      50-54: 3
+      55-59: 4
+      60-64: 4
+      65-69: 5
+      70-74: 5
+      75 or older: 5
+    survey_distribution:
+      18-20: 0.0673372823
+      21-24: 0.0880204181
+      25-29: 0.1110581393
+      30-34: 0.1020654673
+      35-39: 0.1049660054
+      40-44: 0.0732737500
+      45-49: 0.0999644122
+      50-54: 0.0723402401
+      55-59: 0.1100802787
+      60-64: 0.0702659904
+      65-69: 0.0449078972
+      70-74: 0.0194379037
+      75 or older: 0.0362822153
+  education:
+    source: education_level
+    map_source:
+      Less than high school: 0
+      High school graduate or equivalent (e.g., GED): 1
+      Some college, but no degree: 2
+      Associate degree: 3
+      Bachelor's degree: 4
+      Professional degree (e.g., JD, MD): 5
+      Master's degree: 6
+      Doctoral degree: 7
+    map_survey:
+      Less than 1st grade: 0
+      1st, 2nd, 3rd, or 4th grade: 0
+      5th or 6th grade: 0
+      7th or 8th grade: 0
+      9th grade: 0
+      10th grade: 0
+      11th grade: 0
+      12th grade, no diploma: 0
+      High school graduate - high school diploma or the equivalent (e.g. GED): 1
+      Some college but no degree: 2
+      Associate degree in college - occupational/vocational program: 3
+      Associate degree in college - academic program: 3
+      Bachelor's degree (e.g. BA, AB, BS): 4
+      Master's degree (e.g. MA, MS, MEng, MEd, MSW, MBA): 6
+      Professional school degree (e.g. MD, DDS, DVM, LLB, JD): 5
+      Doctorate degree (e.g. PhD, EdD): 7
+    survey_distribution:
+      Less than 1st grade: 0
+      1st, 2nd, 3rd, or 4th grade: 0.0024376334
+      5th or 6th grade: 0.0105729228
+      7th or 8th grade: 0.0038776189
+      9th grade: 0.0275784567
+      10th grade: 0.0094842341
+      11th grade: 0.0274133355
+      12th grade, no diploma: 0.0600060570
+      High school graduate - high school diploma or the equivalent (e.g. GED): 0.3137596157
+      Some college but no degree: 0.1928385552
+      Associate degree in college - occupational/vocational program: 0.0571125371
+      Associate degree in college - academic program: 0.0532927204
+      Bachelor's degree (e.g. BA, AB, BS): 0.1444216864
+      Master's degree (e.g. MA, MS, MEng, MEd, MSW, MBA): 0.0708263692
+      Professional school degree (e.g. MD, DDS, DVM, LLB, JD): 0.0105601537
+      Doctorate degree (e.g. PhD, EdD): 0.0158181039
+  gender:
+    source: gender
+    map_source:
+      Male: 0
+      Female: 1
+      Other (e.g., non-binary, trans): 2
+    map_survey:
+      Male: 0
+      Female: 1
+      Other: 2
+    survey_distribution:
+      Male: 0.4832495072
+      Female: 0.5146147369
+      Other: 0.0021357559
+  income:
+    source: income_level_category_13
+    map_source:
+      Less than $10,000: 0
+      $10,000 to $19,999: 1
+      $20,000 to $29,999: 2
+      $30,000 to $39,999: 3
+      $40,000 to $49,999: 4
+      $50,000 to $59,999: 5
+      $60,000 to $69,999: 6
+      $70,000 to $79,999: 7
+      $80,000 to $89,999: 8
+      $90,000 to $99,999: 9
+      $100,000 to $149,999: 10
+      $150,000 to $199,999: 11
+      $200,000 or more: 11
+    map_survey:
+      Under 5,000: 0
+      5,000-9,999: 0
+      10,000-12,499: 1
+      12,500-14,999: 1
+      15,000-17,499: 1
+      17,500-19,999: 1
+      20,000-22,499: 2
+      22,500-24,999: 2
+      25,000-27,499: 2
+      27,500-29,999: 2
+      30,000-34,999: 3
+      35,000-39,999: 3
+      40,000-44,999: 4
+      45,000-49,999: 4
+      50,000-54,999: 5
+      55,000-59,999: 5
+      60,000-64,999: 6
+      65,000-69,999: 6
+      70,000-74,999: 7
+      75,000-79,999: 7
+      80,000-89,999: 8
+      90,000-99,999: 9
+      100,000-109,999: 10
+      110,000-124,999: 10
+      125,000-149,999: 10
+      150,000-174,999: 11
+      175,000-249,999: 11
+      250,000 or more: 11
+    survey_distribution:
+      Under 5,000: 0.1062208875
+      5,000-9,999: 0.0287124709
+      10,000-12,499: 0.0354726926
+      12,500-14,999: 0.0123791187
+      15,000-17,499: 0.0331787361
+      17,500-19,999: 0.0246734348
+      20,000-22,499: 0.0542515735
+      22,500-24,999: 0.0190234436
+      25,000-27,499: 0.0377190817
+      27,500-29,999: 0.0038155278
+      30,000-34,999: 0.0556041248
+      35,000-39,999: 0.0544913599
+      40,000-44,999: 0.0505077867
+      45,000-49,999: 0.0299650136
+      50,000-54,999: 0.0590583160
+      55,000-59,999: 0.0163460238
+      60,000-64,999: 0.0480524130
+      65,000-69,999: 0.0214118525
+      70,000-74,999: 0.0266398782
+      75,000-79,999: 0.0219257362
+      80,000-89,999: 0.0461804221
+      90,000-99,999: 0.0467996753
+      100,000-109,999: 0.0330438319
+      110,000-124,999: 0.0228262998
+      125,000-149,999: 0.0287086694
+      150,000-174,999: 0.0210341402
+      175,000-249,999: 0.0292777234
+      250,000 or more: 0.0326797660
+  race:
+    source: race
+    map_source:
+      American Indian or Alaska Native: 3
+      Asian or Asian American: 2
+      Black or African American: 1
+      Hispanic or Latino/a: 4
+      Middle Eastern or North African: 5
+      Native Hawaiian or Other Pacific Islander: 2
+      White or European: 0
+      Other: 5
+    map_survey:
+      White: 0
+      Black: 1
+      Asian, native Hawaiian or other Pacif Islr, non-Hispanic: 2
+      Native American or Alaska, Native, non-Hispanic: 3
+      Hispanic: 4
+      Other: 5
+    survey_distribution:
+      White: 0
+      Black: 0.3681873250
+      Asian, native Hawaiian or other Pacif Islr, non-Hispanic: 0.0884975540
+      Native American or Alaska, Native, non-Hispanic: 0.0167017070
+      Hispanic: 0.4002002704
+      Other: 0.1264131436
+
+political_affiliation:
+  source: PLEASE_FILL_IN
+  map_source: PLEASE_FILL_IN
+  map_survey: PLEASE_FILL_IN
+  survey_distribution:
+    Democrat: 0.5412600736
+    Republican: 0.1309610921
+    Independent: 0.2886878041
+    Other: 0.0390910302
+
+ideology:
+  source: PLEASE_FILL_IN
+  map_source: PLEASE_FILL_IN
+  map_survey: PLEASE_FILL_IN
+  survey_distribution:
+    Extremely liberal: 0.04421567061310132
+    Liberal: 0.15530641393116315
+    Slightly liberal: 0.12168676744809052
+    Moderate, middle of the road: 0.2681492763431413
+    Slightly conservative: 0.15506990348999444
+    Conservative: 0.20752943934989013
+    Extremely conservative: 0.0480425288246191

@@ -1,0 +1,79 @@
+wave: 99
+questions:
+  POSNEGAI_a_W99:
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could know people's thoughts and behaviors?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  POSNEGAI_b_W99:
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could perform household chores?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  POSNEGAI_c_W99: 
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could make important life decisions for people?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  POSNEGAI_d_W99: 
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could diagnose medical problems?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  POSNEGAI_e_W99:
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could perform repetitive workplace tasks?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  POSNEGAI_f_W99: 
+    question_body: "How excited or concerned would you be if artificial intelligence computer programs could handle customer service calls?"
+    choices:
+      - Very excited
+      - Somewhat excited
+      - Equal excitement and concern
+      - Somewhat concerned
+      - Very concerned
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+randomize_option_order: true # randomize the order of options
+randomize_question_order: true # randomize the order of questions
+consistency_prompt: Please answer the following question keeping in mind your previous answers.
+in_series: true # whether the questions should be asked in series or separately
+include_answer_forcing: true # include answer forcing prompt after displaying available choices

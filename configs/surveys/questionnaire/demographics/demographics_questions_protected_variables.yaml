@@ -1,0 +1,44 @@
+gender:
+  type: "multiple_choice"
+  question: "What is your gender?"
+  is_numerical: False
+  choices:
+    - "Male"
+    - "Female"
+    - "Other (e.g., non-binary, trans)"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the gender of the person?"
+race:
+  type: "multiple_choice"
+  question: "Which of the following racial or ethnic groups do you identify with?"
+  is_numerical: False
+  choices:
+    - "American Indian or Alaska Native"
+    - "Asian or Asian American"
+    - "Black or African American"
+    - "Hispanic or Latino/a"
+    - "Middle Eastern or North African"
+    - "Native Hawaiian or Other Pacific Islander"
+    - "White or European"
+    - "Other"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the racial or ethnic groups the person belongs to?"
+religion:
+  type: "multiple_choice"
+  question: "What is your religion?"
+  is_numerical: False
+  choices:
+    - "Protestant"
+    - "Roman Catholic"
+    - "Mormon (Church of Jesus Christ of Latter-day Saints or LDS)"
+    - "Orthodox (such as Greek, Russian, or some other Orthodox church)"
+    - "Jewish"
+    - "Muslim"
+    - "Buddhist"
+    - "Hindu"
+    - "Atheist"
+    - "Agnostic"
+    - "Other"
+    - "Nothing in particular"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the religion of the person?"

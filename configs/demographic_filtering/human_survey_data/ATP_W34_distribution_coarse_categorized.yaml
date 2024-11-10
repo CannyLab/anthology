@@ -1,0 +1,172 @@
+survey_name: pew_research_ATP_W34
+
+# this .yaml file is to perform demographic filtering with coarse categorized demographic variables.
+# For example, taking a look at income_level_category_13, the categories are coarsened to 3 categories (Under $40,000, 40 to under $100,000, $100,000 or more)
+
+# sum of weights = 10221.000322689664
+# number of human respondents = 10916
+# this file contains the weighted fraction of demographic groups for each demographic traits
+# fractions are caluclated by ignoring nan values
+
+trait_of_interest:
+  - age_category_4
+  - gender
+  - education_level
+  - income_level_category_13
+  - race
+
+target_distribution: # weighted demographic occupation fraction
+    income: # used field: F_INCOME_FINAL
+        source: income_level_category_13
+        map_source:
+            Less than $10,000: 0
+            $10,000 to $19,999: 0
+            $20,000 to $29,999: 0
+            $30,000 to $39,999: 0
+            $40,000 to $49,999: 1
+            $50,000 to $59,999: 1
+            $60,000 to $69,999: 1
+            $70,000 to $79,999: 1
+            $80,000 to $89,999: 1
+            $90,000 to $99,999: 1
+            $100,000 to $149,999: 2
+            $150,000 to $199,999: 2
+            $200,000 or more: 2
+        map_survey:
+            Less than $10,000: 0
+            10 to under $20,000: 0
+            20 to under $30,000: 0
+            30 to under $40,000: 0
+            40 to under $50,000: 1
+            50 to under $75,000: 1
+            75 to under $100,000: 1
+            100 to under $150,000 [OR]: 2
+            $150,000 or more: 2
+        survey_distribution:
+            Less than $10,000: 0.1134637352
+            10 to under $20,000: 0.1261610371
+            20 to under $30,000: 0.1042877330
+            30 to under $40,000: 0.1187774898
+            40 to under $50,000: 0.0832859088
+            50 to under $75,000: 0.1612831225
+            75 to under $100,000: 0.1166900347
+            100 to under $150,000 [OR]: 0.1025466852
+            $150,000 or more: 0.0735042536
+    age: # used field: F_AGECAT_FINAL
+        source: age_category_4
+        map_source:
+            18-29: 0
+            30-49: 0
+            50-64: 1
+            65 or Above: 1
+        map_survey:
+            18-29: 0
+            30-49: 0
+            50-64: 1
+            65+: 1
+        survey_distribution:
+            18-29: 0.2033825292
+            30-49: 0.3277507123
+            50-64: 0.2706211214
+            65+: 0.1982456371
+    race: # used field: F_RACETHN_RECRUITMENT
+        source: race
+        map_source:
+            American Indian or Alaska Native: 3
+            Asian or Asian American: 3
+            Black or African American: 1
+            Hispanic or Latino/a: 2
+            Middle Eastern or North African: 3
+            Native Hawaiian or Other Pacific Islander: 3
+            White or European: 0
+            Other: 3
+        map_survey:
+            White non-Hispanic: 0
+            Black non-Hispanic: 1
+            Hispanic: 2
+            Other: 3
+        survey_distribution:
+            White non-Hispanic: 0.6421237031
+            Black non-Hispanic: 0.1203390164
+            Hispanic: 0.1583534676
+            Other: 0.0791838129
+    gender: # used field: F_SEX_FINAL
+        source: gender
+        map_source:
+            Male: 0
+            Female: 1
+            Other (e.g., non-binary, trans): 2
+        map_survey:
+            Male: 0
+            Female: 1
+            nan: 2
+        survey_distribution:
+            Male: 0.4832303997
+            Female: 0.5167696003
+            nan: 0
+    education: # used field: F_EDUCCAT2_FINAL
+        source: education_level
+        map_source:
+            Less than high school: 0
+            High school graduate or equivalent (e.g., GED): 0
+            Some college, but no degree: 0
+            Associate degree: 1
+            Bachelor's degree: 1
+            Professional degree (e.g., JD, MD): 1
+            Master's degree: 1
+            Doctoral degree: 1
+        map_survey:
+            Less than high school: 0
+            High school graduate: 0
+            Some college, no degree: 1
+            Associate’s degree: 1
+            College graduate/some postgrad: 1
+            Postgraduate: 1
+        survey_distribution:
+            Less than high school: 0.1004715839
+            High school graduate: 0.2935348170
+            Some college, no degree: 0.2123001731
+            Associate’s degree: 0.0967034272
+            College graduate/some postgrad: 0.1722966526
+            Postgraduate: 0.1246933462
+    religion: # used field: F_RELIG_FINAL
+        source: religion
+        map_source:
+            Protestant: 0
+            Roman Catholic: 1
+            Mormon (Church of Jesus Christ of Latter-day Saints or LDS): 2
+            Orthodox (such as Greek, Russian, or some other Orthodox church): 3
+            Jewish: 4
+            Muslim: 5
+            Buddhist: 6
+            Hindu: 7
+            Atheist: 8
+            Agnostic: 9
+            Other: 10
+            Nothing in particular: 11
+        map_survey:
+            Protestant: 0
+            Roman Catholic: 1
+            Mormon (Church of Jesus Christ of Latter-day Saints or LDS): 2
+            Orthodox (such as Greek, Russian, or some other Orthodox church): 3
+            Jewish: 4
+            Muslim: 5
+            Buddhist: 6
+            Hindu: 7
+            Atheist: 8
+            Agnostic: 9
+            Something else, Specify: 10
+            Nothing in particular: 11
+        survey_distribution:
+            Protestant: 0.4011887385
+            Roman Catholic: 0.1782157533
+            Mormon (Church of Jesus Christ of Latter-day Saints or LDS): 0.0148445512
+            Orthodox (such as Greek, Russian, or some other Orthodox church): 0.0054389475
+            Jewish: 0.0198460674
+            Muslim: 0.0077751686
+            Buddhist: 0.0082064385
+            Hindu: 0.0049153106
+            Atheist: 0.0623879912
+            Agnostic: 0.0643554484
+            Something else, Specify: 0.0305137149
+            Nothing in particular: 0.2023118699

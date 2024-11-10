@@ -1,0 +1,104 @@
+{
+    "F_INC_SDT1": {
+        "topic": "income",
+        "question_body": "What is your annual household income?",
+        "choices": {
+            "1": "Less than $30,000",
+            "2": "$30,000 to less than $40,000",
+            "3": "$40,000 to less than $50,000",
+            "4": "$50,000 to less than $60,000",
+            "5": "$60,000 to less than $70,000",
+            "6": "$70,000 to less than $80,000",
+            "7": "$80,000 to less than $90,000",
+            "8": "$90,000 to less than $100,000",
+            "9": "$100,000 or more",
+            "99": "Refused"
+        }
+    },
+    "F_RACETHNMOD": {
+        "topic": "race",
+        "question_body": "Which of the following racial or ethnic groups do you identify with?",
+        "choices": {
+            "1": "White non-Hispanic",
+            "2": "Black non-Hispanic",
+            "3": "Hispanic",
+            "4": "Other",
+            "5": "Asian non-Hispanic",
+            "99": "Refused"
+        }
+    },
+    "F_AGECAT": {
+        "topic": "age",
+        "question_body": "What is your age?",
+        "choices": {
+            "1": "18-29",
+            "2": "30-49",
+            "3": "50-64",
+            "4": "65+",
+            "99": "Refused"
+        }
+    },
+    "F_GENDER": {
+        "topic": "gender",
+        "question_body": "What is your gender?",
+        "choices": {
+            "1": "A man",
+            "2": "A woman",
+            "3": "In some other way",
+            "99": "Refused"
+        }
+    },
+    "F_EDUCCAT2": {
+        "topic": "education",
+        "question_body": "What is the highest level of education you have completed?",
+        "choices": {
+            "1": "Less than high school",
+            "2": "High school graduate",
+            "3": "Some college, no degree",
+            "4": "Associate's degree",
+            "5": "College graduate/some post grad",
+            "6": "Postgraduate",
+            "99": "Refused"
+        }
+    },
+    "F_CREGION": {
+        "topic": "region",
+        "question_body": "In which region of the country do you live?",
+        "choices": {
+            "1": "Northeast",
+            "2": "Midwest",
+            "3": "South",
+            "4": "West"
+        }
+    },
+    "F_RELIG": {
+        "topic": "religion",
+        "question_body": "What is your present religion?",
+        "choices": {
+            "1": "Protestant",
+            "2": "Roman Catholic",
+            "3": "Mormon",
+            "4": "Orthodox",
+            "5": "Jewish",
+            "6": "Muslim",
+            "7": "Buddhist",
+            "8": "Hindu",
+            "9": "Atheist",
+            "10": "Agnostic",
+            "11": "Other",
+            "12": "Nothing in particular",
+            "99": "Refused"
+        }
+    },
+    "F_PARTY_FINAL": {
+        "topic": "political_affiliation",
+        "question_body": "Generally speaking, do you usually think of yourself as a Democrat, a Republican, an Independent, or what?",
+        "choices": {
+            "1": "Republican",
+            "2": "Democrat",
+            "3": "Independent",
+            "4": "Something else",
+            "99": "Refused"
+        }
+    }
+}

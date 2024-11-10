@@ -1,0 +1,51 @@
+defaults:
+  - backstories: self_generated
+  - questionnaire/ATP: ATP_W34_questions
+  - special_prompt: consistency_prompt
+  - format/mcq_symbol: uppercase
+  - format/choice_format: curved_bracket
+  - format/surveyor_respondent: question_answer
+  - llm_parameters: llama3_70b_together
+  - _self_
+
+# Set the output directory
+hydra:
+  run:
+    dir: outputs/ATP_W${wave}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+run_dir: ${hydra:runtime.output_dir}
+save_dir: outputs/ATP_W${wave}
+
+# output data name
+output_time_stamp: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+output_data_name: spontaneous_backstory_greedy_matched
+
+# Debugging mode
+debug: false
+
+# Parallelization parameter
+num_processes: 1
+
+# The seed to use for the random number generator
+random_seed: 42
+
+# Frequency of saving the generated backstories
+freq: 5
+
+wave: -1
+
+include_compliance_forcing: true
+number_compliance_forcing: 100
+
+# configuration for baseline survey
+is_baseline: false
+survey_data_path: # Download from Pew Research Center. The data file format should be sav.
+survey_demographics_metadata_path: data/questions/ATP_W${wave}_demographic_questions.json
+prompt_style: qa
+trait_of_interest:
+  - income
+  - race
+  - age
+  - gender
+  - education
+include_answer_forcing: true # this answer forcing is answer forcing in baseline prompt, not in survey prompt

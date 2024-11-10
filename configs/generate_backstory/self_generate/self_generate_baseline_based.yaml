@@ -1,0 +1,10 @@
+# Formatting question and answer
+surveyor: "Question"
+respondent: "Answer"
+connector: ":"
+
+# preamble
+preamble_question: ""
+
+# Backstory questions
+backstory_question: "Tell me about yourself."

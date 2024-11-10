@@ -1,0 +1,5 @@
+temperature: 1.0
+max_tokens: 128
+top_p: 1.0
+model_name: "mixtral"
+api_provider: "localhost"

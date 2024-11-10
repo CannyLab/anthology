@@ -1,0 +1,51 @@
+defaults:
+  - questionnaire/ATP: ATP_W34
+  - _self_
+
+# Set the output directory
+hydra:
+  run:
+    dir: outputs/analysis/ATP_W${wave}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+run_dir: ${hydra:runtime.output_dir}
+save_dir: outputs/analysis/ATP_W${wave}
+
+# output data name
+output_time_stamp: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+output_data_name:
+
+# path to experiment repository
+experiment_repository:
+
+# experiment name
+experiment_name: ATP-34
+
+# sub-group analysis
+subgroup: "all"
+
+# distributional distance type
+dist_type: "EMD"
+
+# flag for generating heatmap figures
+draw_heatmap: false
+
+# flag for generating distribution figures
+draw_distribution: false 
+
+# flag for using gdrive to upload/download files
+use_gdrive: false
+
+# Debugging mode
+debug: false
+
+# Parallelization parameter
+num_processes: 1
+
+# The seed to use for the random number generator
+random_seed: 42
+
+# Frequency of saving the generated backstories
+freq: 5
+
+# wave
+wave: 34

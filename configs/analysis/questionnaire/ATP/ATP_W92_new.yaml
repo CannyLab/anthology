@@ -1,0 +1,74 @@
+wave: 92 # topic: political typology
+human_data_path: # Download ATP W92 from Pew Research Center. The data file format should be sav.
+demographics_metadata_path: "data/questions/ATP_W92_demographic_questions.json"
+questions:
+  ELITEUNDMOD_W92:
+    question_body: "In general, do you think people in influential and powerful positions throughout our society understand the challenges people like you face in their daily lives…"
+    choices:
+      - Very well
+      - Somewhat well
+      - Not too well
+      - Not at all well
+  PROBOFF_a_W92: 
+    question_body: "How much of a problem, if any, would you say the following is in the country today? People being too easily offended by things others say"
+    choices:
+      - Major problem
+      - Minor problem
+      - Not a problem
+  RACESURV52MOD_W92:
+    question_body: "How much, if at all, would it bother you to regularly hear people speak a language other than English in public places in your community?"
+    choices:
+      - A lot
+      - Some
+      - Not much
+      - Not at all
+  ELECT_IMPT3_PRVFR_W92:
+    question_body: "Thinking about elections in the country, how important, if at all, is the following? People who are legally qualified and want to vote are able to cast a ballot"
+    choices:
+      - Very important
+      - Somewhat important
+      - Not too important
+      - Not at all important
+  CANDEXP_W92:
+    question_body: "How important is it, if at all, that candidates running for high levels of political office have prior government experience?"
+    choices:
+      - Very important
+      - Somewhat important
+      - Not too important
+      - Not at all important
+  LEGALIMMIGAMT_W92:
+    question_body: "Do you think the number of LEGAL immigrants the U.S. admits should..."
+    choices:
+      - Increase a lot
+      - Increase a little
+      - Stay about the same
+      - Decrease a little
+      - Decrease a lot
+  UNIMMIGCOMM_W92:
+    question_body: "When it comes to people who have immigrated to the U.S ILLEGALLY, do you think they generally make the communities they live in..."
+    choices:
+      - A lot better
+      - A little better
+      - A little worse
+      - A lot worse
+  LEGALIMMIGAMT_W92: 
+    question_body: "Regardless of your own religious beliefs, how important, if at all, do you think it is for a person to believe in God in order to be considered good and moral?"
+    choices:
+      - Essential
+      - Important, but not essential
+      - Not too important
+      - Not at all important
+  REPRSNTREP_W92: 
+    question_body: "How well does the REPUBLICAN PARTY represent the interests of people like you?"
+    choices:
+      - Very well
+      - Somewhat well
+      - Not too well
+      - Not at all well
+  REPRSNTREP_W92:
+    question_body: "How well does the DEMOCRATIC PARTY represent the interests of people like you?"
+    choices:
+      - Very well
+      - Somewhat well
+      - Not too well
+      - Not at all well

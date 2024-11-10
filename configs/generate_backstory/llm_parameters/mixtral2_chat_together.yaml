@@ -1,0 +1,6 @@
+temperature: 1.1
+max_tokens: 1500
+top_p: 1.0
+model_name: "mixtral2_chat"
+api_provider: "together.ai"
+system_prompt: ""

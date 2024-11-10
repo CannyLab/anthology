@@ -1,0 +1,68 @@
+wave: 111
+questions:
+  ONSAFE_W111:
+    question_body: "In general, how safe do you think online dating sites and dating apps are as a way to meet people?"
+    choices:
+      - Very safe
+      - Somewhat safe
+      - Not too safe
+      - Not at all safe
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3]
+      - [3,2,1,0]
+  ONIMPACT_W111:
+    question_body: "Overall, what type of effect would you say online dating sites and dating apps have had on dating and relationships?"
+    choices:
+      - Mostly positive effect
+      - Mostly negative effect
+      - Neither positive nor negative effect
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2]
+      - [1,0,2]
+  HARASSWRK4_W111:
+    question_body: "Compared with five years ago, do you think people who commit sexual harassment or assault in the workplace are now..."
+    choices:
+      - More likely to be held responsible
+      - Less likely to be held responsible
+      - Has not made much difference
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2]
+      - [1,0,2]
+  HARASSWRK5_W111:
+    question_body: "Compared with five years ago, do you think people who report experiencing sexual harassment or assault in the workplace are now..."
+    choices:
+      - More likely to be believed
+      - Less likely to be believed
+      - Has not made much difference
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2]
+      - [1,0,2]
+  HARASSWRK1M_W111:
+    question_body: "Thinking about how men interact with women in the workplace, do you think the increased focus on sexual harassment and assault in the last five years has made it..."
+    choices:
+      - Easier for men to know how to interact with women in the workplace 
+      - Harder for men to know how to interact with women in the workplace
+      - Has not made much difference
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2]
+      - [1,0,2]
+  HARASSWRK1W_W111:
+    question_body: "Thinking about how women interact with men in the workplace, do you think the increased focus on sexual harassment and assault in the last five years has made it..."
+    choices:
+      - Easier for women to know how to interact with men in the workplace
+      - Harder for women to know how to interact with men in the workplace
+      - Has not made much difference
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2]
+      - [1,0,2]
+randomize_option_order: true # randomize the order of options
+randomize_question_order: true # randomize the order of questions
+consistency_prompt: Please answer the following question keeping in mind your previous answers.
+in_series: true # whether the questions should be asked in series or separately
+include_answer_forcing: true

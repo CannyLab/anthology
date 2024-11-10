@@ -1,0 +1,91 @@
+wave: 92
+questions:
+  SOCIETY_TRANS_W92:
+    question_body: "Do you think the following is generally good or bad for our society? Greater social acceptance of people who are transgender (people who identify as a gender that is different from the sex they were assigned at birth)"
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  SOCIETY_RHIST_W92: 
+    question_body: "Do you think the following is generally good or bad for our society? Increased public attention to the history of slavery and racism in America"
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  SOCIETY_JBCLL_W92: 
+    question_body: "Do you think the following is generally good or bad for our society? Good-paying jobs requiring a college degree more often than they used to"
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  SOCIETY_RELG_W92: 
+    question_body: "Do you think the following is generally good or bad for our society? A decline in the share of Americans belonging to an organized religion"
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  SOCIETY_WHT_W92: 
+    question_body: "Do you think the following is generally good or bad for our society? White people declining as a share of the U.S. population"
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  SOCIETY_GUNS_W92: 
+    question_body: "Do you think the following is generally good or bad for our society? An increase in the number of guns in the U.S."
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+  SOCIETY_SSM_W92: 
+    question_body: "Do you think the following is generally good or bad for our society? Same-sex marriages being legal in the U.S."
+    choices:
+      - Very good for society
+      - Somewhat good for society
+      - Neither good nor bad for society
+      - Somewhat bad for society
+      - Very bad for society
+    allow_randomization: true
+    randomization_pattern:
+      - [0,1,2,3,4]
+      - [4,3,2,1,0]
+randomize_option_order: true # randomize the order of options
+randomize_question_order: true # randomize the order of questions
+consistency_prompt: Please answer the following question keeping in mind your previous answers.
+in_series: true # whether the questions should be asked in series or separately
+include_answer_forcing: true # include answer forcing prompt after displaying available choices

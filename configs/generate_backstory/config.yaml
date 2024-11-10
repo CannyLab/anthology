@@ -1,0 +1,27 @@
+defaults:
+  - self_generate: self_generate
+  - llm_parameters: openai
+  - _self_
+
+# Set the output directory
+hydra:
+  run:
+    dir: outputs/self_generated_backstories/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+run_dir: ${hydra:runtime.output_dir}
+save_dir: /rscratch/data/anthology/outputs/self_generated_backstories
+
+# output data name
+output_data_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+# Debugging mode
+debug: false
+
+# Parallelization parameter
+num_processes: 1
+
+# Frequency of saving the generated backstories
+freq: 10
+
+# The number of backstories to generate
+num_backstories: 1000

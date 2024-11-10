@@ -1,0 +1,51 @@
+defaults:
+  - backstories: self_generated
+  - questionnaire/demographics: demographics_questions
+  - special_prompt: consistency_prompt
+  - format/mcq_symbol: uppercase
+  - format/choice_format: curved_bracket
+  - format/surveyor_respondent: question_answer
+  - llm_parameters: llama3_70b_together
+  - _self_
+
+
+# number of samples to obtain for each demographics questionairre
+num_sample_response: 40
+
+# use prefer_not_to_answer option
+use_prefer_not_to_answer: True
+
+# LLM as parser configs
+use_llm_as_parser: True
+llm_parsing_parameters:
+  temperature: 0.0
+  max_tokens: 256
+  top_p: 1.0
+  model_name: "gpt-4o"
+  api_key:
+  api_base: "https://api.openai.com/v1"
+  top_logprobs: 0
+  logprobs: False
+
+# Set the output directory
+hydra:
+  run:
+    dir: outputs/demographics_survey/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+run_dir: ${hydra:runtime.output_dir}
+save_dir: /rscratch/data/anthology/outputs/demographics_survey
+
+# output data name
+output_data_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+# Debugging mode
+debug: False
+
+# Parallelization parameter
+num_processes: 1
+
+# The seed to use for the random number generator
+random_seed: 42
+
+# Frequency of saving the generated backstories
+freq: 5

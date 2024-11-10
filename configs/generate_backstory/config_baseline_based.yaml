@@ -1,0 +1,48 @@
+defaults:
+  - self_generate: self_generate_baseline_based
+  - llm_parameters: mixtral2_chat_together
+  - _self_
+
+# Set the output directory
+hydra:
+  run:
+    dir: outputs/self_generated_backstories/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+run_dir: ${hydra:runtime.output_dir}
+save_dir:
+
+# output data name
+output_data_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+# Debugging mode
+debug: false
+
+# Parallelization parameter
+num_processes: 1
+
+# Frequency of saving the generated backstories
+freq: 10
+
+# The number of backstories to generate. This should be fewer than the number of human respondents in the survey file.
+num_backstories: -1
+
+# The seed to use for the random number generator
+random_seed: 42
+
+# if using the demographic information from the actual human survey, directory:
+survey_data_path: # Download from Pew Research Center. The data file format should be sav.
+survey_demographics_metadata_path: data/questions/ATP_W${wave}_demographic_questions.json
+
+# wave number
+wave: -1
+
+# prompt style, which is an input to the backstory generation
+prompt_style: qa
+
+# trait to feed into the backstory generation preamble
+trait_of_interest:
+  - income
+  - race
+  - age
+  - gender
+  - education

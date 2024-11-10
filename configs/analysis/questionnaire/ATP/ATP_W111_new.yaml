@@ -1,0 +1,44 @@
+wave: 111 # topic: Online dating and E-commerce
+human_data_path: # Download ATP W111 from Pew Research Center. The data file format should be sav.
+demographics_metadata_path: "data/questions/ATP_W111_demographic_questions.json"
+questions:
+  HARASSWRK2_W111: 
+    question_body: "How common do you think it is for people to report that they experienced sexual harassment or assault in the workplace when it DID NOT happen?"
+    choices:
+      - Extremely common
+      - Very common
+      - Somewhat common
+      - Not too common
+      - Not at all common
+  HARASSWRK3_W111: 
+    question_body: "How common do you think it is for people to experience sexual harassment or assault in the workplace and NOT report it?"
+    choices:
+      - Extremely common
+      - Very common
+      - Somewhat common
+      - Not too common
+      - Not at all common
+  HARASSWRK4_W111:
+    question_body: "Compared with five years ago, do you think people who commit sexual harassment or assault in the workplace are now..."
+    choices:
+      - More likely to be held responsible
+      - Less likely to be held responsible
+      - Has not made much difference
+  HARASSWRK5_W111:
+    question_body: "Compared with five years ago, do you think people who report experiencing sexual harassment or assault in the workplace are now..."
+    choices:
+      - More likely to be believed
+      - Less likely to be believed
+      - Has not made much difference
+  HARASSWRK1M_W111:
+    question_body: "Thinking about how men interact with women in the workplace, do you think the increased focus on sexual harassment and assault in the last five years has made it..."
+    choices:
+      - Easier for men to know how to interact with women in the workplace 
+      - Harder for men to know how to interact with women in the workplace
+      - Has not made much difference
+  HARASSWRK1W_W111:
+    question_body: "Thinking about how women interact with men in the workplace, do you think the increased focus on sexual harassment and assault in the last five years has made it..."
+    choices:
+      - Easier for women to know how to interact with men in the workplace
+      - Harder for women to know how to interact with men in the workplace
+      - Has not made much difference

@@ -1,0 +1,12 @@
+sampling_parameters:
+  temperature: 1.0
+  max_tokens: 128
+  top_p: 1.0
+engine_parameters:
+  dtype: "auto"
+  seed: 42
+  gpu_memory_utilization: 0.9
+  enforce_eager: True
+  max_logprobs: 200
+model_name: "llama-3-70b"
+api_provider: "vllm"

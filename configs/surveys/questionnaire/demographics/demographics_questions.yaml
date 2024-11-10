@@ -1,0 +1,114 @@
+age_category_6:
+  type: "multiple_choice"
+  question: "What is your age?"
+  is_numerical: True
+  choices:
+    - "18-24"
+    - "25-34"
+    - "35-44"
+    - "45-54"
+    - "55-64"
+    - "65 or Above"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the age of the person?"
+age_category_4:
+  type: "multiple_choice"
+  question: "What is your age?"
+  is_numerical: True
+  choices:
+    - "18-29"
+    - "30-49"
+    - "50-64"
+    - "65 or Above"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the age of the person?"
+gender:
+  type: "multiple_choice"
+  question: "What is your gender?"
+  is_numerical: False
+  choices:
+    - "Male"
+    - "Female"
+    - "Other (e.g., non-binary, trans)"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the gender of the person?"
+education_level:
+  type: "multiple_choice"
+  question: "What is the highest level of education you have completed?"
+  is_numerical: False
+  choices:
+    - "Less than high school"
+    - "High school graduate or equivalent (e.g., GED)"
+    - "Some college, but no degree"
+    - "Associate degree"
+    - "Bachelor's degree"
+    - "Professional degree (e.g., JD, MD)"
+    - "Master's degree"
+    - "Doctoral degree"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the highest level of education the person has completed?"
+income_level_category_13:
+  type: "multiple_choice"
+  question: "What is your annual household income?"
+  is_numerical: True
+  choices:
+    - "Less than $10,000"
+    - "$10,000 to $19,999"
+    - "$20,000 to $29,999"
+    - "$30,000 to $39,999"
+    - "$40,000 to $49,999"
+    - "$50,000 to $59,999"
+    - "$60,000 to $69,999"
+    - "$70,000 to $79,999"
+    - "$80,000 to $89,999"
+    - "$90,000 to $99,999"
+    - "$100,000 to $149,999"
+    - "$150,000 to $199,999"
+    - "$200,000 or more"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the annual household income the person makes?"
+race:
+  type: "multiple_choice"
+  question: "Which of the following racial or ethnic groups do you identify with?"
+  is_numerical: False
+  choices:
+    - "American Indian or Alaska Native"
+    - "Asian or Asian American"
+    - "Black or African American"
+    - "Hispanic or Latino/a"
+    - "Middle Eastern or North African"
+    - "Native Hawaiian or Other Pacific Islander"
+    - "White or European"
+    - "Other"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the racial or ethnic groups the person belongs to?"
+religion:
+  type: "multiple_choice"
+  question: "What is your religion?"
+  is_numerical: False
+  choices:
+    - "Protestant"
+    - "Roman Catholic"
+    - "Mormon (Church of Jesus Christ of Latter-day Saints or LDS)"
+    - "Orthodox (such as Greek, Russian, or some other Orthodox church)"
+    - "Jewish"
+    - "Muslim"
+    - "Buddhist"
+    - "Hindu"
+    - "Atheist"
+    - "Agnostic"
+    - "Other"
+    - "Nothing in particular"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the religion of the person?"
+region:
+  type: "multiple_choice"
+  question: "In which region of the United States do you live?"
+  is_numerical: False
+  choices:
+    - "Northeast"
+    - "Midwest"
+    - "South"
+    - "West"
+    - "Prefer not to answer"
+  llm_parser_question: "What does the person's essay above mention about the region of the United States the person lives in?"

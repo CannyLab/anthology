@@ -1,0 +1,24 @@
+survey_name: bail
+
+demographic_filtering:
+  age:
+    18-24: 0.0702439
+    25-34: 0.0
+    35-49: 0.3151220
+    50-64: 0.2136585
+    65+: 0.4009756
+  education:
+    No HS Degree: 0.008071749
+    HS Degree: 0.069955157
+    Some College / 2-year Degree: 0.27713
+    Bachelor's Degree: 0.383856502
+    Graduate Degree: 0.260986547
+  gender:
+    male: 0.4785832
+    female: 0.5214168
+  income:
+    <20k: 0.07385698
+    20k~39k: 0.16998828
+    40k~59k: 0.18640094
+    60k~79k: 0.16178195
+    80k+: 0.40797186
