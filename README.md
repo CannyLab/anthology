@@ -39,14 +39,14 @@ pip install -e .
 ## Generate Backstories
 To generate backstories, you can use the following command:
 ```bash
-python experiment_scripts/s0_self_generate_backstories.py num_backstories=1000 num_workers=10
+python scripts/s0_self_generate_backstories.py num_backstories=1000 num_workers=10
 ```
 The `num_backstories` parameter specifies the number of backstories to generate. The `num_workers` parameter specifies the number of workers to use for parallel processing. The default parameter config yaml file can be found in `configs/generate_backstory/config.yaml`. To change the parameters, you can refer to this link: [Generate Backstories Config](configs/generate_backstory/config.yaml)
 
 ## Load Backstories to Conduct Suvey
 You might need to load the backstories to conduct downstream survey. For example, you might want to survey demographic information of the backstories. You can use the following command:
 ```bash
-python experiment_scripts/s1_ask_demographics.py num_workers=10 backsotries.backstory_path="path_to_backstories"
+python scripts/s1_ask_demographics.py num_workers=10 backsotries.backstory_path="path_to_backstories"
 ```
 
 The `backstories.backstory_path` parameter specifies the path to the backstories. The backstory path should be a directory containing the backstories.
