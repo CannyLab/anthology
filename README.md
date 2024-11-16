@@ -9,7 +9,7 @@
 <!--- BADGES: END --->
 
 <p align="center">
-<a href="https://bair.berkeley.edu/blog/2024/11/10/virtual_personas/">Read the blog post</a> |
+<a href="https://bair.berkeley.edu/blog/2024/11/12/virutal-persona-llm/">Read the blog post</a> |
 <a href="https://arxiv.org/abs/2407.06576">Read the paper</a>
 </p>
 
