@@ -25,7 +25,7 @@ This raises an interesting question: __How can we condition the model to reflect
 To answer this question, we introduce ***Anthology***, a method for conditioning LLMs to representative, consistent, and diverse virtual personas by generating and utilizing naturalistic backstories with rich details of individual values and experience.
 Additionally, we present methods for generating these backstories directly from LLMs, enabling efficient production of extensive sets that span a broad spectrum of human demographics. By grounding language models in detailed backstories, Anthology enhances their ability to simulate individual human profiles with greater accuracy, as measured by alignment with the distribution and consistency of authentic human responses.
 
-## Installation
+## Install and Download Backstories
 The configuration of all experiments is handled by [Hydra]("https://hydra.cc/). The configuration files can be found in the `configs` directory.
 
 To install the required packages, you can use the following command:
@@ -35,6 +35,8 @@ cd anthology
 pip install -r requirements.txt
 pip install -e .
 ```
+
+We share approximately 10,000 pre-generated backstories at this [link](https://drive.google.com/file/d/18ctlWJXfckgAsb0yC-vSi5sTlid4xFQk/view?usp=sharing).
 
 ## Generate Backstories
 To generate backstories, you can use the following command:
