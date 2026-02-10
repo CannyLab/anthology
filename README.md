@@ -36,7 +36,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-We share approximately 10,000 pre-generated backstories at this [link](https://drive.google.com/file/d/18ctlWJXfckgAsb0yC-vSi5sTlid4xFQk/view?usp=sharing).
+We share approximately 10,000 pre-generated backstories at this [link](https://huggingface.co/datasets/SuhongMoon/anthology_backstory).
 
 ## Generate Backstories
 To generate backstories, you can use the following command:
